@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "pacifico";
+    src: url(./fonts/pacifico-webfont.woff2) format("woff2"),
+        url(./fonts/pacifico-webfont.woff) format("woff");
+}
+
+@font-face {
+    font-family: "caviar";
+    src: url(./fonts/caviardreams-webfont.woff2) format("woff2"),
+        url(./fonts/caviardreams-webfont.woff) format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "caviar";
+    src: url(./fonts/caviar_dreams_bold-webfont.woff2) format("woff2"),
+        url(./fonts/caviar_dreams_bold-webfont.woff) format("woff");
+    font-weight: bold;
+}
+
+:root {
+    --main-color: #22d3ee;
+    --light-color: #ecfeff;
+    --dark-color: #155e75;
+    --text-color: #083344;
+    --hover-color: #06b6d4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+}
+
+body {
+    background-color: var(--light-color);
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+
+nav button {
+    appearance: none;
+    border: none;
+    background-color: var(--main-color);
+    font-family: "pacifico", sans-serif;
+    font-size: 2rem;
+    color: var(--light-color);
+}
+
+nav button:hover,
+nav button:active {
+    background-color: var(--hover-color);
+    text-shadow: 0px 0px 8px var(--light-color);
+}
+
+#hero-img {
+    width: 100%;
+    max-width: 960px;
+    object-fit: cover;
+    object-position: bottom;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+#content > div {
+    display: grid;
+    justify-items: center;
+    font-family: "caviar", sans-serif;
+}
+
+#content p{
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+#content h2 {
+    font-size: 2rem;
+    margin: 12px 0;
+}
+
+#content h2 > span {
+    text-decoration: underline;
+}
