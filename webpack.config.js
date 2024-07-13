@@ -19,8 +19,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.svg/i,
-                type: "asset/inline",
+                test: /\.jpg$/i,
+                type: "asset/resource",
             },
             {
                 test: /\.css$/i,
