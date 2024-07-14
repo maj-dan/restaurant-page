@@ -2,6 +2,7 @@ import homeImage from "./burger.jpg";
 
 export default function home(){
     const home = document.createElement("div");
+    home.classList.add("home-content");
 
     const img = new Image();
     img.src = homeImage;

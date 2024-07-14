@@ -28,6 +28,7 @@ const foods = [
 
 export default function menu(){
     const menu = document.createElement("div");
+    menu.classList.add("menu-content");
 
     for (let food of foods){
         const foodCard = document.createElement("div");
@@ -35,7 +36,7 @@ export default function menu(){
         const foodImg = document.createElement("img");
         const foodText = document.createElement("p");
 
-        foodName.textContent = food.name;
+        foodName.textContent = food.name.toUpperCase();
         foodImg.alt = food.name;
         foodImg.src = food.img;
         foodText.textContent = food.text;
