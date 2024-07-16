@@ -5,7 +5,7 @@ const INFO = [
     },
     {
         title: "Address",
-        content: "<p>The Cholesterol Empire</p><p>Almost The Cofin Street 5432, Yougethingthere</p><p>The Federated States of Sweetness.</p>"
+        content: "<p>The Cholesterol Empire</p><p>Almost The Cofin Street 5432, Yougettingthere</p><p>The Federated States of Sweetness.</p>"
     },
     {
         title: "Contact",
@@ -15,6 +15,7 @@ const INFO = [
 
 export default function about() {
     const about = document.createElement("div");
+    about.classList.add("about-content");
     
     for(let section of INFO) {
         const container = document.createElement("div");

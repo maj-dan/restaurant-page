@@ -150,3 +150,27 @@ nav button:active {
 .menu-content h2 {
     color: inherit;
 }
+
+/*About page styling*/
+.about-content {
+    padding: 16px 16px;
+    gap: 24px;
+    grid-template-columns: minmax(468px, 960px);
+    justify-content: center;
+}
+
+.about-content > div {
+    display: grid;
+    border: 2px solid var(--dark-color);
+    border-radius: 6px;
+    width: 100%;
+    padding: 24px;
+    font-size: 1.5rem;
+}
+
+.about-content h2 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
