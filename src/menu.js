@@ -3,7 +3,7 @@ import fries from "./imgs/fries.jpg";
 import pizza from "./imgs/pizza.jpg";
 import iceCream from "./imgs/icecream.jpg";
 
-const foods = [
+const FOODS = [
     {
         name: "Burger",
         img: burger,
@@ -30,7 +30,7 @@ export default function menu(){
     const menu = document.createElement("div");
     menu.classList.add("menu-content");
 
-    for (let food of foods){
+    for (let food of FOODS){
         const foodCard = document.createElement("div");
         const foodName = document.createElement("h2");
         const foodImg = document.createElement("img");

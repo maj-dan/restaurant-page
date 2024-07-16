@@ -1,5 +1,6 @@
 import homePage from "./home.js";
-import "./style.css";
 import menuPage from "./menu.js";
+import aboutPage from "./about.js";
+import "./style.css";
 
-document.querySelector("#content").appendChild(menuPage());
+document.querySelector("#content").appendChild(aboutPage());
