@@ -14,7 +14,7 @@ import "./style.css";
     function switchTab(event) {
         //ckecking if it's a valid btn, to use one event listener with event bubbling
         if(!(/-btn$/.test(event.target.id))) return;
-        
+        //prevent error with not existing div after page load
         if(event.isTrusted) document.querySelector("#content > div").remove();
     
         switch (event.target.id) {
